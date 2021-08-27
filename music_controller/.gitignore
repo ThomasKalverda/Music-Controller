@@ -6,6 +6,9 @@ __pycache__
 db.sqlite3
 media
 
+# DJANGO SECRET KEY
+music_controller/config.py
+
 # Backup files # 
 *.bak 
 
