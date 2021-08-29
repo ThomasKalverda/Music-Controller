@@ -9,6 +9,9 @@ media
 # DJANGO SECRET KEY
 music_controller/config.py
 
+#Spotify credentials
+spotify/credentials.py
+
 # Backup files # 
 *.bak 
 
