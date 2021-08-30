@@ -159,7 +159,7 @@ export default class CreateRoomPage extends Component {
           <Grid item xs={12} align="center">
             <FormControl component="fieldset">
               <FormHelperText>
-                <div align="center">Guest Control of Playback State</div>
+                <div className="text-color-white" align="center">Guest Control of Playback State</div>
               </FormHelperText>
               <RadioGroup
                 row
@@ -190,11 +190,11 @@ export default class CreateRoomPage extends Component {
                 defaultValue={this.state.votesToSkip}
                 inputProps={{
                   min: 1,
-                  style: { textAlign: "center" },
+                  style: { textAlign: "center", color: "white" },
                 }}
               />
               <FormHelperText>
-                <div align="center">Votes Required To Skip Song</div>
+                <div className="text-color-white" align="center">Votes Required to Skip Song</div>
               </FormHelperText>
             </FormControl>
           </Grid>

@@ -33,6 +33,9 @@ export default class RoomJoinPage extends Component {
                     helperText={this.state.error}
                     variant="outlined"
                     onChange={ this.handleTextFieldChange}
+                    inputProps={{
+                        style: { color: "white" },
+                      }}
                     />
                 </Grid>
                 <Grid item xs={12} align="center">
