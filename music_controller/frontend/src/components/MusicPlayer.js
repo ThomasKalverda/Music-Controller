@@ -5,6 +5,7 @@ import {
   Card,
   IconButton,
   LinearProgress,
+  TextField,
 } from "@material-ui/core";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import PauseIcon from "@material-ui/icons/Pause";
@@ -66,8 +67,11 @@ export default class MusicPlayer extends Component {
                 {this.props.is_playing ? <PauseIcon /> : <PlayArrowIcon />}
               </IconButton>
               <IconButton onClick={() => this.skipSong()}>
-                 {this.props.votes} / {" "}{this.props.votes_required}<SkipNextIcon  />
+                 <SkipNextIcon  />
               </IconButton>
+              <Typography color="textSecondary" variant="subtitle2">
+              Votes to skip: {this.props.votes} / {" "}{this.props.votes_required}
+            </Typography>
             </div>
           </Grid>
         </Grid>
